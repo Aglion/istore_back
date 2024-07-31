@@ -193,7 +193,7 @@ namespace istore_api
         public void InitDatabase()
         {
             var context = new AppDbContext(new DbContextOptions<AppDbContext>(), _config);
-            var adminEmail = "itismymessagebox@mail.ru";
+            var adminEmail = "itismymessage@mail.ru";
 
             var admin = context.Users.FirstOrDefault(e => e.Email == adminEmail);
             if (admin == null)
